@@ -15,7 +15,7 @@ namespace WebApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
+            ViewData["Message"] = "test"; // System.Runtime.InteropServices.RuntimeInformation.OSDescription;
 
             return View();
         }
