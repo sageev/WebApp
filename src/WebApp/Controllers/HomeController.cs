@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices;
 
 namespace WebApp.Controllers
 {
@@ -15,7 +12,7 @@ namespace WebApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "test"; // System.Runtime.InteropServices.RuntimeInformation.OSDescription;
+            ViewData["Message"] = RuntimeInformation.OSDescription;
 
             return View();
         }
